@@ -22,7 +22,7 @@ jobs:
         run: pip install ruff
 
       - name: Run Ruff on scaffolder
-        run: ruff scaffold.py
+        run: ruff check scaffold.py
 
   precommit:
     name: Run Pre-commit hooks
