@@ -21,8 +21,8 @@ It also sets up essential tools such as **Ruff**, **pytest**, **pre-commit**, **
 
 ### 1. Clone this repository
 ```bash
-git clone <your-repo-url>
-cd <your-repo>
+git clone https://github.com/fabianfalon/fastapi-ddd-scaffolder.git
+cd fastapi-ddd-scaffolder
 ```
 
 ### 2. Run the scaffolder
