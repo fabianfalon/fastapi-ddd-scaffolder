@@ -133,9 +133,9 @@ def make_makefile() -> str:
         "contracts:\n"
         "\tlint-imports\n\n"
         "clean-pyc:\n"
-        "\tfind . -type d -name \"__pycache__\" -exec rm -rf {} +\n"
-        "\tfind . -type f -name \"*.pyc\" -delete\n"
-        "\tfind . -type f -name \"*.pyo\" -delete\n"
+        '\tfind . -type d -name "__pycache__" -exec rm -rf {} +\n'
+        '\tfind . -type f -name "*.pyc" -delete\n'
+        '\tfind . -type f -name "*.pyo" -delete\n'
     )
 
 
