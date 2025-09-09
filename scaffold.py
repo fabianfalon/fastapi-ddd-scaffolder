@@ -97,7 +97,7 @@ def make_compose(project_name: str) -> str:
         volumes:
           - ../:/app
         env_file:
-          - ../.env
+          - ../src/.env
         command: uvicorn src.main:app --host 0.0.0.0 --port 8000 --reload
     """).lstrip()
 
@@ -340,8 +340,8 @@ def scaffold(project_path: str, project_name: str, force: bool = False) -> None:
     write_file(root / ".importlinter", make_importlinter(), force)
     write_file(root / "ruff.toml", make_ruff_toml(), force)
     write_file(root / ".pre-commit-config.yaml", make_precommit(), force)
-    write_file(root / ".env.example", make_env_example(), force)
-    write_file(root / ".env", make_env_example(), force)
+    write_file(root / "src" / ".env.example", make_env_example(), force)
+    write_file(root / "src" / ".env", make_env_example(), force)
 
     # Base code
     write_file(root / "src" / "main.py", make_main(), force)
